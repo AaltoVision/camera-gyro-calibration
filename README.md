@@ -38,6 +38,9 @@ Example
 ffmpeg -r 2 -i data/cards2/senserve-ios-2017-09-15-184221.mov data/cards2/frame-%05d.png 
 ```
 
+References
+--
+* S. Cortés, A. Solin, J. Kannala (2018). Robust Gyroscope-Aided Camera Self-Calibration. In Proceedings of the International Conference on Information Fusion (FUSION). Cambridge, UK.
 
 License
 --
