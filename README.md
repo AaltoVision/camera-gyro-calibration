@@ -35,7 +35,7 @@ Example
 * to extract frames run the following comment.
 
 ```
-ffmpeg -r 2 -i data/cards2/senserve-ios-2017-09-15-184221.mov data/cards2/frame-%05d.png 
+ffmpeg -r 2 -i data/cards2/data.mov data/cards2/frame-%05d.png 
 ```
 
 References
