@@ -7,7 +7,15 @@
 % Licence (version 2 or later); please refer to the file
 % Licence.txt, included with the software, for details.
 
+%Load path
+addpath('./dynamic_model')
+addpath('./EKF')
+addpath('./features')
+addpath('./inout')
+addpath('./util')
+
 %Enable frame by frame visualization of visual measurements.
+%make sure frames are extracted (see readme).
 visualize=false;
 
 %Seed random number generator

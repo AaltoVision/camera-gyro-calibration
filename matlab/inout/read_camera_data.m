@@ -75,10 +75,10 @@ function [data,frames] = read_camera_data(path,cleanup)
 
   % Only run FFMPEG if files have not been extracted
   if ~exist(fullfile(pathstr,'frame-00001.png'),'file')
-  
+    error('frames not extraced on the corresponding data folder')
     % Extract frames using FFMPEG (requires unix)
-    status = unix(sprintf('ffmpeg -r 2 -i %s.mov %s/frame-%%05d.png', ...
-      filename,pathstr));
+    %status = unix(sprintf('ffmpeg -r 2 -i %s.mov %s/frame-%%05d.png', ...
+      %filename,pathstr));
   
     % If problems encountered, report
     if status~=0

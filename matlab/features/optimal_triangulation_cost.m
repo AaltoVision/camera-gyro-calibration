@@ -1,3 +1,29 @@
+%optimal_triangulation_cost  Optimal cost for triangulation ZIzzerman
+%algorithm 12.1
+%
+% Syntax:
+%   S=optimal_triangulation_cost(x,xp,F)
+%
+% In:
+%   x  - pixel coordinates in camera 1 
+%   xp  - pixel coordinates in camera 2
+%   F - potential Fundamental matrix
+%  
+% Out:
+%   S  - cost to be minimized
+%
+% Description:
+%   Part of algorithm 12.2 in the book:
+%   Richard Hartley and Andrew Zisserman. 2003. Multiple View Geometry 
+%       in Computer Vision (2 ed.). Cambridge University Press, New York,
+%       NY, USA
+%
+% Copyright (C) 2018 Santiago Cortés
+%
+% This software is distributed under the GNU General Public 
+% Licence (version 2 or later); please refer to the file 
+% Licence.txt, included with the software, for details.
+
 function S=optimal_triangulation_cost(x,xp,F)
 %cost of match given a fundamental matrix, Zisserman book algorithm 12.1
 T=eye(3);

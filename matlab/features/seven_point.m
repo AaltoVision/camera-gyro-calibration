@@ -1,6 +1,31 @@
+%seven_point  Seven point algorithm for fundamental matrix
+%
+% Syntax:
+%    S=seven_point(P)
+%
+% In:
+%   P  - Points
+%   
+%  
+% Out:
+%   S  - fundamental matrix
+%
+% Description:
+%   Seven point algorithm for estimation of a fundamental matrix qiven two
+%   sets of corresponding 7 points. Following Hartley Zisserman book.
+%
+%   Richard Hartley and Andrew Zisserman. 2003. Multiple View Geometry 
+%       in Computer Vision (2 ed.). Cambridge University Press, New York,
+%       NY, USA
+%
+% Copyright (C) 2018 Santiago Cortés
+%
+% This software is distributed under the GNU General Public 
+% Licence (version 2 or later); please refer to the file 
+% Licence.txt, included with the software, for details.
+
 function S=seven_point(P)
-%Seven point algorithm for estimation of a fundamental matrix qiven two
-%sets of corresponding 7 points. Following Hartley Zisserman book.
+
 
 %form matrix
 for i=1:7

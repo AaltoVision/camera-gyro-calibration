@@ -1,3 +1,29 @@
+%7 point ransac algorithm 11.4
+%
+% Syntax:
+%   [inl,F]= ransac_7_point(P,t,perc)
+%
+% In:
+%   P  - pixel coordinates of all views.
+%   t  - treshold for cost.
+%   perc - percentage of answers necesary to be chosen.
+%  
+% Out:
+%   inl  - inliers.
+%   F - fundamental matrix.
+%
+% Description:
+%   Algorithm 11.4 in the book:
+%   Richard Hartley and Andrew Zisserman. 2003. Multiple View Geometry 
+%       in Computer Vision (2 ed.). Cambridge University Press, New York,
+%       NY, USA
+%
+% Copyright (C) 2018 Santiago Cortés
+%
+% This software is distributed under the GNU General Public 
+% Licence (version 2 or later); please refer to the file 
+% Licence.txt, included with the software, for details.
+
 function [inl,F]= ransac_7_point(P,t,perc)
 %7 point ransac, zisserman algorithm 11.4
 L=size(P,1);

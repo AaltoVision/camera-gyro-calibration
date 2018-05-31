@@ -1,3 +1,23 @@
+%features  class to contain and keep tracked frames trough a video.
+%
+% Syntax:
+%    obj = features(p_frames,N_features,p_camera_model)
+%
+% In:
+%    p_frames - a cell array containing the path to the frames
+%    N_features - the maximum number of features to track.
+%    p_camera - model is the camera model (optional) 
+%
+% Description:
+%   Track salient features in a video using the good features to track
+%   algorithm. store the tracks and return them.
+%
+% Copyright (C) 2018 Santiago Cortés
+%
+% This software is distributed under the GNU General Public 
+% Licence (version 2 or later); please refer to the file 
+% Licence.txt, included with the software, for details.
+
 classdef features < handle
     %Class for feature handling.
     

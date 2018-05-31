@@ -1,3 +1,25 @@
+%quat2rmat  transformation to rotation matrix from quaternion
+%
+% Syntax:
+%    R = quat2rmat( q )
+%
+% In:
+%   q  - quaternion.
+%
+%  
+% Out:
+%   R  - rotation matrix.
+%
+% Description:
+%   Create rotation matrix from unit quaternion using rodriguez formula.
+%
+% Copyright (C) 2018 Santiago Cortés
+%
+% This software is distributed under the GNU General Public 
+% Licence (version 2 or later); please refer to the file 
+% Licence.txt, included with the software, for details.
+
+
 function R = quat2rmat( q )
 % Converts quaternions into rotation matrices
 % If a vector of quaternions is given, it needs to be stacked vertically
