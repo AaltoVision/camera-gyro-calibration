@@ -1,4 +1,4 @@
-# camera-gyro-calibration
+# Codes for Robust Gyroscope-Aided Camera Self-Calibration
 Santiago Cortés Reina (Doctoral student at Aalto University)
 
 
