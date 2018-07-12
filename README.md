@@ -4,7 +4,9 @@ Camera calibration for estimating the intrinsic parameters and lens distortion i
 
 ## Paper
 
-[arXiv](https://arxiv.org/abs/1805.12506)
+[Paper preprint](https://arxiv.org/abs/1805.12506)
+
+[Presentation slides]({{ site.baseurl }}/assets/presentation.pdf))
 
 ## Video
 
